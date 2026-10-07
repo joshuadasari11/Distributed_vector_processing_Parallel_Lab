@@ -1,0 +1,15 @@
+# Binaries and build artifacts
+bin/
+*.o
+*.out
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS & Editor files
+.DS_Store
+*:Zone.Identifier
+*.tmp
+*.log
+!results/benchmark_log.txt

@@ -1,0 +1,94 @@
+======================================================================
+ Starting Benchmarking Suite: Distributed Vector Processing (MPI)
+ Host CPU Architecture: x86_64, 4 logical cores
+ Timestamp: Sat Oct  3 15:17:27 IST 2026
+======================================================================
+
+======================================================================
+ WORKLOAD TIER: N = 1000000 elements
+======================================================================
+Running Sequential Baseline (N=1000000)... Done.
+  -> Sequential Time: 0.044658s (Throughput: 22.39 M-elem/s)
+Running MPI In-Situ (N=1000000, P=1)... Done.
+  -> MPI InSitu (P=1): Total=0.053014s, Speedup=0.8424x, Efficiency=84.24%, Status=PASSED
+Running MPI In-Situ (N=1000000, P=2)... Done.
+  -> MPI InSitu (P=2): Total=0.034257s, Speedup=1.3036x, Efficiency=65.18%, Status=PASSED
+Running MPI In-Situ (N=1000000, P=4)... Done.
+  -> MPI InSitu (P=4): Total=0.024431s, Speedup=1.8279x, Efficiency=45.70%, Status=PASSED
+Running MPI In-Situ (N=1000000, P=8)... Done.
+  -> MPI InSitu (P=8): Total=0.045560s, Speedup=0.9802x, Efficiency=12.25%, Status=PASSED
+Running MPI In-Situ (N=1000000, P=16)... Done.
+  -> MPI InSitu (P=16): Total=0.025879s, Speedup=1.7256x, Efficiency=10.79%, Status=PASSED
+Running MPI Scatter-Gather (N=1000000, P=1)... Done.
+  -> MPI ScatterGather (P=1): Total=0.079104s, Comm=0.034870s, Comp=0.044232s, Speedup=0.5645x
+Running MPI Scatter-Gather (N=1000000, P=2)... Done.
+  -> MPI ScatterGather (P=2): Total=0.060157s, Comm=0.028950s, Comp=0.033531s, Speedup=0.7424x
+Running MPI Scatter-Gather (N=1000000, P=4)... Done.
+  -> MPI ScatterGather (P=4): Total=0.053727s, Comm=0.036040s, Comp=0.019218s, Speedup=0.8312x
+Running MPI Scatter-Gather (N=1000000, P=8)... Done.
+  -> MPI ScatterGather (P=8): Total=0.082339s, Comm=0.057625s, Comp=0.028922s, Speedup=0.5424x
+Running MPI Scatter-Gather (N=1000000, P=16)... Done.
+  -> MPI ScatterGather (P=16): Total=0.084939s, Comm=0.078840s, Comp=0.013243s, Speedup=0.5258x
+
+======================================================================
+ WORKLOAD TIER: N = 10000000 elements
+======================================================================
+Running Sequential Baseline (N=10000000)... Done.
+  -> Sequential Time: 0.477381s (Throughput: 20.95 M-elem/s)
+Running MPI In-Situ (N=10000000, P=1)... Done.
+  -> MPI InSitu (P=1): Total=0.474867s, Speedup=1.0053x, Efficiency=100.53%, Status=PASSED
+Running MPI In-Situ (N=10000000, P=2)... Done.
+  -> MPI InSitu (P=2): Total=0.293179s, Speedup=1.6283x, Efficiency=81.41%, Status=PASSED
+Running MPI In-Situ (N=10000000, P=4)... Done.
+  -> MPI InSitu (P=4): Total=0.291042s, Speedup=1.6402x, Efficiency=41.01%, Status=PASSED
+Running MPI In-Situ (N=10000000, P=8)... Done.
+  -> MPI InSitu (P=8): Total=0.361049s, Speedup=1.3222x, Efficiency=16.53%, Status=PASSED
+Running MPI In-Situ (N=10000000, P=16)... Done.
+  -> MPI InSitu (P=16): Total=0.403535s, Speedup=1.1830x, Efficiency=7.39%, Status=PASSED
+Running MPI Scatter-Gather (N=10000000, P=1)... Done.
+  -> MPI ScatterGather (P=1): Total=0.994222s, Comm=0.536515s, Comp=0.457704s, Speedup=0.4802x
+Running MPI Scatter-Gather (N=10000000, P=2)... Done.
+  -> MPI ScatterGather (P=2): Total=0.642402s, Comm=0.371754s, Comp=0.317292s, Speedup=0.7431x
+Running MPI Scatter-Gather (N=10000000, P=4)... Done.
+  -> MPI ScatterGather (P=4): Total=0.794857s, Comm=0.587666s, Comp=0.225797s, Speedup=0.6006x
+Running MPI Scatter-Gather (N=10000000, P=8)... Done.
+  -> MPI ScatterGather (P=8): Total=0.886666s, Comm=0.584113s, Comp=0.354701s, Speedup=0.5384x
+Running MPI Scatter-Gather (N=10000000, P=16)... Done.
+  -> MPI ScatterGather (P=16): Total=0.746240s, Comm=0.690002s, Comp=0.229777s, Speedup=0.6397x
+
+======================================================================
+ WORKLOAD TIER: N = 50000000 elements
+======================================================================
+Running Sequential Baseline (N=50000000)... Done.
+  -> Sequential Time: 9.397639s (Throughput: 5.32 M-elem/s)
+Running MPI In-Situ (N=50000000, P=1)... Done.
+  -> MPI InSitu (P=1): Total=10.525492s, Speedup=0.8928x, Efficiency=89.28%, Status=PASSED
+Running MPI In-Situ (N=50000000, P=2)... Done.
+  -> MPI InSitu (P=2): Total=1.964464s, Speedup=4.7838x, Efficiency=239.19%, Status=PASSED
+Running MPI In-Situ (N=50000000, P=4)... Done.
+  -> MPI InSitu (P=4): Total=2.069166s, Speedup=4.5418x, Efficiency=113.54%, Status=PASSED
+Running MPI In-Situ (N=50000000, P=8)... Done.
+  -> MPI InSitu (P=8): Total=1.855514s, Speedup=5.0647x, Efficiency=63.31%, Status=PASSED
+Running MPI In-Situ (N=50000000, P=16)... Done.
+  -> MPI InSitu (P=16): Total=1.426153s, Speedup=6.5895x, Efficiency=41.18%, Status=PASSED
+Running MPI Scatter-Gather (N=50000000, P=1)... Done.
+  -> MPI ScatterGather (P=1): Total=7.009781s, Comm=4.617650s, Comp=2.390728s, Speedup=1.3406x
+Running MPI Scatter-Gather (N=50000000, P=2)... Done.
+  -> MPI ScatterGather (P=2): Total=5.994711s, Comm=4.685683s, Comp=1.330964s, Speedup=1.5677x
+Running MPI Scatter-Gather (N=50000000, P=4)... Done.
+  -> MPI ScatterGather (P=4): Total=5.629861s, Comm=4.601953s, Comp=1.264049s, Speedup=1.6692x
+Running MPI Scatter-Gather (N=50000000, P=8)... Done.
+  -> MPI ScatterGather (P=8): Total=3.691806s, Comm=2.651648s, Comp=1.273199s, Speedup=2.5455x
+Running MPI Scatter-Gather (N=50000000, P=16)... Done.
+  -> MPI ScatterGather (P=16): Total=4.532550s, Comm=4.060336s, Comp=1.129882s, Speedup=2.0734x
+
+======================================================================
+
+======================================================================
+ Benchmarking Suite Completed Successfully!
+ Workloads Evaluated: N = 1,000,000, 10,000,000, 50,000,000 elements
+ Process Scales Evaluated: P = 1, 2, 4, 8, 16 ranks
+ Paradigms: Sequential Baseline, MPI In-Situ, MPI Scatter-Gather
+ Numerical Verification Status: 100% PASSED across all runs
+ Results Saved to: results/timing_results.csv
+======================================================================
